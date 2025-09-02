@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: error
+
+spring:
+  main:
+    web-application-type: none
+  application:
+    name: mcp-server-stdio
+  ai:
+    mcp:
+      server:
+        name: mcp-server-stdio
+        stdio: true
+

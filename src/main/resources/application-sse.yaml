@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: info
+
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    name: mcp-server-sse
+  ai:
+    mcp:
+      server:
+        name: mcp-server-sse
+        stdio: false
+

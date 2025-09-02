@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        enabled: true
+        version: 1.0.0
+        type: SYNC
+        capabilities:
+          tool: true
+          resource: false
+          prompt: false
+          completion: false
+
