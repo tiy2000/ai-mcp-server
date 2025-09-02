@@ -37,23 +37,6 @@ MCP client: **[Cursor IDE](https://docs.cursor.com/en/welcome).**
 }
 ```
 
-### For The Current Project
-
-```json
-{
-  "mcpServers": {
-    "tiy-mcp-server-1": {
-      "command": "java",
-      "args": [
-        "-Dspring.profiles.active=stdio",
-        "-jar",
-        "/Users/tiy/IdeaProjects/ai-mcp-serveer/target/ai-mcp-serveer-0.0.1-SNAPSHOT.jar"
-      ]
-    }
-  }
-}
-```
-
 ## Remote Server: HTTP/SSE Transport
 
 ### General Example
@@ -66,18 +49,6 @@ MCP client: **[Cursor IDE](https://docs.cursor.com/en/welcome).**
       "headers": {
         "API_KEY": "value"
       }
-    }
-  }
-}
-```
-
-### For The Current Project
-
-```json
-{
-  "mcpServers": {
-    "tiy-mcp-server-web-sse": {
-      "url": "http://localhost:8080/sse"
     }
   }
 }
