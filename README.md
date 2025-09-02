@@ -1,25 +1,36 @@
-# Prerequisites
+# Simple MCP Server
+
+This is just an example of a dummy MCP Server implementation that can be used for education only.
+
+The server is written in Java and uses Spring Boot.
+
+It has two transports:
+
+- STDIO
+- HTTP/SSE
+
+## Prerequisites
 
 - Java 17+
 - MCP client (for example, Cursor IDE)
 
-# Getting the project
+## Getting the project
 
 ```
 cd <your-projects-root>
-git clone ...
+git clone https://github.com/tiy2000/ai-mcp-server
 cd ai-mcp-server
 ```
 
-# Using CLI MCP Server via STDIO Transport
+## Using CLI MCP Server via STDIO Transport
 
-## Building the project
+### Building the project
 
 ```
 mvn clean package
 ```
 
-## Customize The MCP Client
+### Customize The MCP Client
 
 ```json
 {
@@ -36,15 +47,15 @@ mvn clean package
 }
 ```
 
-# Using Remote MCP Server via HTTP/SSE Transport
+## Using Remote MCP Server via HTTP/SSE Transport
 
-## Running MCP Server
+### Running MCP Server
 
 ```
 mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Dspring.profiles.active=sse"
 ```
 
-## Customize The MCP Client
+### Customize The MCP Client
 
 ```json
 {
@@ -55,3 +66,7 @@ mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Dspring.profiles.active=sse
   }
 }
 ```
+## Additional Information
+
+- [MCP client-server interaction](doc/mcp-interaction.md)
+- [MCP client settings](doc/mcp-client-settings.md)
